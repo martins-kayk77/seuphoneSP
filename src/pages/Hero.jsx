@@ -1,5 +1,21 @@
 import { ArrowRight, Star, Shield, Truck, Instagram } from 'lucide-react'
 
+function RatingStars() {
+  return (
+    <div className="flex items-center gap-0.5" aria-hidden="true">
+      {[...Array(4)].map((_, i) => (
+        <Star key={i} className="w-4 h-4 fill-primary text-primary" />
+      ))}
+      <span className="relative inline-block h-4 w-4">
+        <Star className="absolute inset-0 h-4 w-4 fill-primary/20 text-primary/40" />
+        <span className="absolute inset-y-0 left-0 w-1/2 overflow-hidden">
+          <Star className="h-4 w-4 fill-primary text-primary" />
+        </span>
+      </span>
+    </div>
+  )
+}
+
 export default function Hero() {
   return (
     <section id="inicio" className="relative pt-20 md:pt-24 overflow-x-hidden bg-white">
@@ -20,11 +36,7 @@ export default function Hero() {
           <div className="w-full min-w-0 max-w-[calc(100vw-2rem)] space-y-8 lg:max-w-none">
             {/* Badge */}
             <div className="inline-flex max-w-full items-center gap-2 bg-secondary px-4 py-2 rounded-full">
-              <div className="flex items-center gap-0.5">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className={`w-4 h-4 ${i < 4 ? 'fill-primary text-primary' : 'fill-primary/50 text-primary/50'}`} />
-                ))}
-              </div>
+              <RatingStars />
               <span className="text-sm font-medium text-secondary-foreground">
                 4.5 estrelas | 79 avaliações
               </span>

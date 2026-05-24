@@ -1,5 +1,21 @@
 import { Star, Quote } from 'lucide-react'
 
+function GoogleRatingStars() {
+  return (
+    <div className="flex items-center gap-1" aria-hidden="true">
+      {[...Array(4)].map((_, i) => (
+        <Star key={i} className="w-5 h-5 fill-primary text-primary" />
+      ))}
+      <span className="relative inline-block h-5 w-5">
+        <Star className="absolute inset-0 h-5 w-5 fill-primary/20 text-primary/40" />
+        <span className="absolute inset-y-0 left-0 w-1/2 overflow-hidden">
+          <Star className="h-5 w-5 fill-primary text-primary" />
+        </span>
+      </span>
+    </div>
+  )
+}
+
 const testimonials = [
   {
     name: 'Marcos Silveira',
@@ -79,11 +95,7 @@ export default function Testimonials() {
         {/* Google Rating */}
         <div className="mt-12 text-center">
           <div className="inline-flex items-center gap-4 bg-secondary/50 px-6 py-4 rounded-full">
-            <div className="flex items-center gap-1">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className={`w-5 h-5 ${i < 4 ? 'fill-primary text-primary' : 'fill-primary/50 text-primary/50'}`} />
-              ))}
-            </div>
+            <GoogleRatingStars />
             <span className="text-foreground font-semibold">4.5 de 5</span>
             <span className="text-muted-foreground">|</span>
             <span className="text-muted-foreground">79 avaliações no Google</span>

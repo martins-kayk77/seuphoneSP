@@ -1,0 +1,23 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <circle cx="980" cy="190" r="220" fill="#2563EB" fill-opacity="0.14"/>
+  <circle cx="204" cy="682" r="238" fill="#38BDF8" fill-opacity="0.13"/>
+  <g filter="url(#shadow)">
+    <path d="M438 248C438 203 474 167 519 167C564 167 600 203 600 248V496C600 532 571 561 535 561C499 561 470 532 470 496V351H519C548 351 571 328 571 299C571 270 548 247 519 247H438Z" fill="white"/>
+    <path d="M762 248C762 203 726 167 681 167C636 167 600 203 600 248V496C600 532 629 561 665 561C701 561 730 532 730 496V351H681C652 351 629 328 629 299C629 270 652 247 681 247H762Z" fill="white"/>
+    <rect x="392" y="572" width="416" height="132" rx="66" fill="white"/>
+    <rect x="510" y="598" width="180" height="24" rx="12" fill="#E2E8F0"/>
+  </g>
+  <text x="80" y="112" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="48" font-weight="800">AirPods</text>
+  <text x="80" y="164" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="500">Som premium para sua rotina</text>
+  <defs>
+    <linearGradient id="bg" x1="85" y1="73" x2="1100" y2="822" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FAFC"/>
+      <stop offset="0.56" stop-color="#DBEAFE"/>
+      <stop offset="1" stop-color="#BAE6FD"/>
+    </linearGradient>
+    <filter id="shadow" x="280" y="80" width="640" height="760" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="42" stdDeviation="34" flood-color="#0F172A" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+</svg>

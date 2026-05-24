@@ -1,0 +1,29 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <circle cx="1012" cy="138" r="220" fill="white" fill-opacity="0.24"/>
+  <circle cx="190" cy="748" r="260" fill="#2563EB" fill-opacity="0.13"/>
+  <g filter="url(#shadow)">
+    <rect x="248" y="145" width="704" height="548" rx="52" fill="#CBD5E1"/>
+    <rect x="278" y="175" width="644" height="488" rx="36" fill="#0F172A"/>
+    <rect x="306" y="203" width="588" height="432" rx="24" fill="url(#screen)"/>
+    <circle cx="601" cy="658" r="12" fill="#64748B"/>
+  </g>
+  <rect x="814" y="610" width="202" height="28" rx="14" fill="#334155" fill-opacity="0.36"/>
+  <text x="80" y="112" fill="white" font-family="Inter, Arial, sans-serif" font-size="48" font-weight="800">iPad</text>
+  <text x="80" y="164" fill="white" fill-opacity="0.8" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="500">Tela grande para trabalho e estudos</text>
+  <defs>
+    <linearGradient id="bg" x1="88" y1="72" x2="1047" y2="826" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A78BFA"/>
+      <stop offset="0.56" stop-color="#3B82F6"/>
+      <stop offset="1" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="306" y1="203" x2="894" y2="635" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE"/>
+      <stop offset="0.48" stop-color="#6366F1"/>
+      <stop offset="1" stop-color="#F43F5E"/>
+    </linearGradient>
+    <filter id="shadow" x="120" y="40" width="960" height="790" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="44" stdDeviation="34" flood-color="#0F172A" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+</svg>

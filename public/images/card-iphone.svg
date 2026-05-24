@@ -1,0 +1,31 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <circle cx="955" cy="172" r="180" fill="white" fill-opacity="0.22"/>
+  <circle cx="227" cy="742" r="210" fill="#1D4ED8" fill-opacity="0.16"/>
+  <g filter="url(#shadow)" transform="rotate(-12 602 448)">
+    <rect x="446" y="122" width="308" height="654" rx="56" fill="#111827"/>
+    <rect x="462" y="141" width="276" height="616" rx="44" fill="#F8FAFC"/>
+    <rect x="486" y="185" width="228" height="520" rx="34" fill="url(#screen)"/>
+    <rect x="553" y="158" width="94" height="18" rx="9" fill="#111827"/>
+    <circle cx="537" cy="236" r="29" fill="#0F172A" stroke="#334155" stroke-width="8"/>
+    <circle cx="537" cy="315" r="29" fill="#0F172A" stroke="#334155" stroke-width="8"/>
+    <circle cx="618" cy="275" r="29" fill="#0F172A" stroke="#334155" stroke-width="8"/>
+  </g>
+  <text x="80" y="112" fill="white" font-family="Inter, Arial, sans-serif" font-size="48" font-weight="800">iPhone</text>
+  <text x="80" y="164" fill="white" fill-opacity="0.8" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="500">Linha Pro e modelos recentes</text>
+  <defs>
+    <linearGradient id="bg" x1="74" y1="87" x2="1100" y2="834" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="0.55" stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="486" y1="185" x2="714" y2="705" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#60A5FA"/>
+      <stop offset="0.45" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#F97316"/>
+    </linearGradient>
+    <filter id="shadow" x="245" y="-80" width="710" height="1060" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="42" stdDeviation="32" flood-color="#0F172A" flood-opacity="0.32"/>
+    </filter>
+  </defs>
+</svg>

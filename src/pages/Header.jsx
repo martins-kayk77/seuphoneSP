@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
-import { cn } from '../lib/utils'
 
 const navLinks = [
   { name: 'Início', href: '#inicio' },
@@ -16,7 +15,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 w-full max-w-full overflow-x-clip bg-white/95 backdrop-blur-md border-b border-border">
+    <header className="fixed top-0 left-0 right-0 z-50 w-full bg-white/95 backdrop-blur-md border-b border-border">
       <div className="w-full max-w-7xl mx-auto px-4 pr-3 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
@@ -64,25 +63,22 @@ export default function Header() {
       </div>
 
       {/* Mobile Navigation */}
-      <div
-        className={cn(
-          'fixed left-0 right-0 top-16 max-h-[calc(100dvh-4rem)] overflow-y-auto bg-white border-b border-border shadow-lg transition-all duration-300 md:hidden',
-          isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
-        )}
-      >
-        <nav className="flex flex-col p-4 gap-2">
-          {navLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              onClick={() => setIsOpen(false)}
-              className="text-foreground font-medium py-3 px-4 rounded-lg hover:bg-secondary transition-colors"
-            >
-              {link.name}
-            </a>
-          ))}
-        </nav>
-      </div>
+      {isOpen && (
+        <div className="absolute left-0 right-0 top-full z-50 bg-white border-b border-border shadow-xl md:hidden">
+          <nav className="flex flex-col p-4 gap-2">
+            {navLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                onClick={() => setIsOpen(false)}
+                className="text-foreground font-medium py-3 px-4 rounded-lg hover:bg-secondary transition-colors"
+              >
+                {link.name}
+              </a>
+            ))}
+          </nav>
+        </div>
+      )}
     </header>
   )
 }

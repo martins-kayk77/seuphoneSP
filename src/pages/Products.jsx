@@ -53,23 +53,23 @@ export default function Products() {
   const [activeProductId, setActiveProductId] = useState(null)
 
   return (
-    <section id="produtos" className="overflow-x-clip py-20 md:py-28 bg-secondary/30">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="produtos" className="w-full max-w-full overflow-x-hidden py-20 md:py-28 bg-secondary/30">
+      <div className="w-full max-w-7xl mx-auto overflow-x-hidden px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="mx-auto mb-16 max-w-full text-center md:max-w-3xl">
           <span className="text-primary font-semibold text-sm uppercase tracking-wider">
             Nossos Produtos
           </span>
           <h2 className="mt-3 text-3xl md:text-4xl lg:text-5xl font-bold text-foreground text-balance">
             Linha completa Apple
           </h2>
-          <p className="mt-4 text-lg text-muted-foreground">
+          <p className="mx-auto mt-4 max-w-full text-base leading-relaxed text-muted-foreground sm:text-lg">
             iPhones, iPads, MacBooks, Apple Watch, AirPods e mais. Novos e seminovos com garantia.
           </p>
         </div>
 
         {/* Instagram-style Grid */}
-        <div className="grid md:grid-cols-2 gap-6 md:gap-8">
+        <div className="grid w-full min-w-0 max-w-full md:grid-cols-2 gap-6 md:gap-8">
           {products.map((product) => {
             const isMacBook = product.name === 'MacBook'
             const isActive = activeProductId === product.id
@@ -77,22 +77,22 @@ export default function Products() {
             return (
               <div
                 key={product.id}
-                className={`group relative rounded-3xl shadow-sm hover:shadow-xl transition-all duration-500 ${
-                  isMacBook ? 'md:col-span-2 flex flex-col bg-[#f5f5f7] text-center overflow-visible md:min-h-[620px] md:overflow-hidden' : 'overflow-hidden bg-white'
+                className={`group relative min-w-0 max-w-full rounded-3xl shadow-sm hover:shadow-xl transition-all duration-500 ${
+                  isMacBook ? 'md:col-span-2 flex flex-col bg-[#f5f5f7] text-center overflow-hidden md:min-h-[620px]' : 'overflow-hidden bg-white'
                 }`}
               >
                 {/* Image Container */}
                 <div
                   onClick={() => setActiveProductId(isActive ? null : product.id)}
                   className={`relative cursor-pointer ${
-                    isMacBook ? 'order-2 aspect-[16/9] overflow-visible bg-[#f5f5f7] px-0 pt-10 pb-4 md:flex-1 md:aspect-auto md:overflow-hidden md:px-4 md:pt-0 md:pb-10' : 'aspect-[4/3] overflow-hidden'
+                  isMacBook ? 'order-2 aspect-[16/9] overflow-hidden bg-[#f5f5f7] px-0 pt-10 pb-4 md:flex-1 md:aspect-auto md:px-4 md:pt-0 md:pb-10' : 'h-56 overflow-hidden bg-white sm:h-64 md:h-auto md:aspect-[4/3]'
                   }`}
                 >
                 <img
                   src={product.image}
                   alt={product.name}
                   className={`w-full h-full transition-transform duration-700 ${
-                    isMacBook ? 'object-contain object-top scale-[1.85] group-hover:scale-[1.9] md:scale-125 md:group-hover:scale-[1.3]' : 'object-cover group-hover:scale-105'
+                    isMacBook ? 'object-contain object-top scale-[1.85] group-hover:scale-[1.9] md:scale-125 md:group-hover:scale-[1.3]' : 'object-cover object-center group-hover:scale-105'
                   }`}
                 />
                 

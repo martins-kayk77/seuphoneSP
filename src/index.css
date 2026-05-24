@@ -75,19 +75,24 @@ body {
   background-color: hsl(var(--background));
   color: hsl(var(--foreground));
   font-family: var(--font-sans);
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 html {
   scroll-behavior: smooth;
-  overflow-x: clip;
+  width: 100%;
+  overflow-x: hidden;
   max-width: 100%;
 }
 
-body {
-  overflow-x: clip;
+#root {
+  width: 100%;
   max-width: 100%;
+  overflow-x: hidden;
 }
 
 /* Custom scrollbar */

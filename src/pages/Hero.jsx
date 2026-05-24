@@ -2,7 +2,7 @@ import { ArrowRight, Star, Shield, Truck, Instagram } from 'lucide-react'
 
 export default function Hero() {
   return (
-    <section id="inicio" className="relative pt-20 md:pt-24 overflow-x-clip bg-white">
+    <section id="inicio" className="relative pt-20 md:pt-24 overflow-x-hidden bg-white">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/30" />
       <div className="pointer-events-none absolute top-44 -right-20 opacity-25 sm:-left-20 sm:right-auto sm:top-28 lg:opacity-20">
@@ -14,7 +14,7 @@ export default function Hero() {
         />
       </div>
       
-      <div className="relative mx-auto w-full max-w-full overflow-x-clip px-4 py-16 sm:px-6 md:py-24 lg:max-w-7xl lg:px-8 lg:py-32">
+      <div className="relative mx-auto w-full max-w-full overflow-x-hidden px-4 py-16 sm:px-6 md:py-24 lg:max-w-7xl lg:px-8 lg:py-32">
         <div className="grid w-full min-w-0 max-w-full lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Content */}
           <div className="w-full min-w-0 max-w-[calc(100vw-2rem)] space-y-8 lg:max-w-none">

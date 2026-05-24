@@ -7,7 +7,7 @@ const products = [
     name: 'iPhone',
     description: 'O mais poderoso iPhone já criado. Câmera de 48MP, chip A18 Pro e tela Super Retina XDR.',
     image: '/images/iphoneSITEapple.jpg',
-    badge: 'Lancamento',
+    badge: 'Lançamento',
     badgeColor: 'bg-primary',
   },
   {
@@ -23,7 +23,7 @@ const products = [
     name: 'Apple Watch',
     description: 'Design moderno, recursos de saúde e conectividade para acompanhar sua rotina.',
     image: '/images/applewatch.png',
-    badge: 'Acessorios',
+    badge: 'Acessórios',
     badgeColor: 'bg-orange-500',
   },
   {

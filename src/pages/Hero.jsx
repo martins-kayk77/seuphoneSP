@@ -74,7 +74,7 @@ export default function Hero() {
             {/* Instagram Followers Badge */}
             <div className="inline-flex w-full max-w-full items-center justify-center gap-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-5 py-2.5 rounded-full sm:w-auto">
               <Instagram className="w-5 h-5 shrink-0" />
-              <span className="font-semibold">+33.7K seguidores no Instagram</span>
+              <span className="font-semibold">+35.6K seguidores no Instagram</span>
             </div>
 
             {/* CTA Buttons */}

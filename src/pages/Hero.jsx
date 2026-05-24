@@ -2,7 +2,7 @@ import { ArrowRight, Star, Shield, Truck, Instagram } from 'lucide-react'
 
 export default function Hero() {
   return (
-    <section id="inicio" className="relative pt-20 md:pt-24 overflow-hidden bg-white">
+    <section id="inicio" className="relative pt-20 md:pt-24 overflow-x-clip bg-white">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/30" />
       <div className="pointer-events-none absolute top-44 -right-20 opacity-25 sm:-left-20 sm:right-auto sm:top-28 lg:opacity-20">
@@ -14,12 +14,12 @@ export default function Hero() {
         />
       </div>
       
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 lg:py-32">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div className="relative mx-auto w-full max-w-full overflow-x-clip px-4 py-16 sm:px-6 md:py-24 lg:max-w-7xl lg:px-8 lg:py-32">
+        <div className="grid w-full min-w-0 max-w-full lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Content */}
-          <div className="space-y-8">
+          <div className="w-full min-w-0 max-w-[calc(100vw-2rem)] space-y-8 lg:max-w-none">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-secondary px-4 py-2 rounded-full">
+            <div className="inline-flex max-w-full items-center gap-2 bg-secondary px-4 py-2 rounded-full">
               <div className="flex items-center gap-0.5">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className={`w-4 h-4 ${i < 4 ? 'fill-primary text-primary' : 'fill-primary/50 text-primary/50'}`} />
@@ -31,18 +31,18 @@ export default function Hero() {
             </div>
 
             {/* Brand Mark */}
-            <div className="inline-flex items-center gap-3 bg-white px-4 py-3 rounded-2xl border border-border shadow-sm">
+            <div className="inline-flex w-full max-w-full items-center gap-3 bg-white px-4 py-3 rounded-2xl border border-border shadow-sm sm:w-auto">
               <img
                 src="/images/LOGO.jpg"
                 alt=""
                 aria-hidden="true"
-                className="w-11 h-11 rounded-xl object-cover"
+                className="w-11 h-11 shrink-0 rounded-xl object-cover"
               />
-              <div>
+              <div className="min-w-0">
                 <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                   Seu Phone SP
                 </p>
-                <p className="text-sm font-semibold text-foreground">
+                <p className="text-sm font-semibold leading-snug text-foreground">
                   Loja de produtos Apple em Embu das Artes
                 </p>
               </div>
@@ -50,18 +50,18 @@ export default function Hero() {
 
             {/* Headline */}
             <div className="space-y-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
+              <h1 className="max-w-full text-[2rem] sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
                 A melhor loja de{' '}
                 <span className="text-primary">iPhone</span> de Embu das Artes
               </h1>
-              <p className="text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed">
+              <p className="max-w-full text-base sm:text-lg md:text-xl text-muted-foreground md:max-w-xl leading-relaxed">
                 Linha completa Apple: iPhones, iPads, MacBooks, Apple Watch e AirPods. Novos e seminovos com garantia. Há mais de 5 anos entregando qualidade e confiança.
               </p>
             </div>
 
             {/* Instagram Followers Badge */}
-            <div className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-5 py-2.5 rounded-full">
-              <Instagram className="w-5 h-5" />
+            <div className="inline-flex w-full max-w-full items-center justify-center gap-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-5 py-2.5 rounded-full sm:w-auto">
+              <Instagram className="w-5 h-5 shrink-0" />
               <span className="font-semibold">+33.7K seguidores no Instagram</span>
             </div>
 
@@ -71,7 +71,7 @@ export default function Hero() {
                 href="https://wa.me/5511977578125"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-primary text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-primary/90 transition-all hover:scale-105 shadow-lg shadow-primary/25"
+                className="inline-flex w-full max-w-full items-center justify-center gap-2 bg-primary text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-primary/90 transition-all hover:scale-105 shadow-lg shadow-primary/25 sm:w-auto"
               >
                 Falar no WhatsApp
                 <ArrowRight className="w-5 h-5" />
@@ -80,7 +80,7 @@ export default function Hero() {
                 href="https://www.instagram.com/seuphonesp/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-white text-foreground px-8 py-4 rounded-full font-semibold text-lg border-2 border-border hover:border-primary hover:text-primary transition-colors"
+                className="inline-flex w-full max-w-full items-center justify-center gap-2 bg-white text-foreground px-8 py-4 rounded-full font-semibold text-lg border-2 border-border hover:border-primary hover:text-primary transition-colors sm:w-auto"
               >
                 <Instagram className="w-5 h-5" />
                 Ver no Instagram
@@ -88,7 +88,7 @@ export default function Hero() {
             </div>
 
             {/* Trust Badges */}
-            <div className="flex flex-wrap gap-6 pt-4">
+            <div className="flex flex-col gap-4 pt-4 sm:flex-row sm:flex-wrap sm:gap-6">
               <div className="flex items-center gap-2 text-muted-foreground">
                 <Shield className="w-5 h-5 text-primary" />
                 <span className="text-sm font-medium">Garantia em todos os aparelhos</span>

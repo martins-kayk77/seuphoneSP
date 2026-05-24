@@ -16,12 +16,12 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 w-screen max-w-full overflow-x-clip bg-white/95 backdrop-blur-md border-b border-border">
+    <header className="fixed top-0 left-0 right-0 z-50 w-full max-w-full overflow-x-clip bg-white/95 backdrop-blur-md border-b border-border">
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="#inicio" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-lg overflow-hidden">
+          <a href="#inicio" className="flex min-w-0 items-center gap-2">
+            <div className="w-10 h-10 shrink-0 rounded-lg overflow-hidden">
               <img
                 src="/images/LOGO.jpg"
                 alt=""
@@ -29,7 +29,7 @@ export default function Header() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <span className="font-bold text-xl text-foreground">
+            <span className="whitespace-nowrap text-lg font-bold text-foreground sm:text-xl">
               Seu Phone <span className="text-primary">SP</span>
             </span>
           </a>

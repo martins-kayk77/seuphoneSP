@@ -71,7 +71,7 @@ export default function Hero() {
                 href="https://wa.me/5511977578125"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex w-full max-w-full items-center justify-center gap-2 bg-primary text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-primary/90 transition-all hover:scale-105 shadow-lg shadow-primary/25 sm:w-auto"
+                className="inline-flex min-h-14 w-full max-w-full touch-manipulation items-center justify-center gap-2 rounded-full bg-primary px-6 py-4 text-center text-lg font-semibold text-white shadow-lg shadow-primary/25 transition-all hover:bg-primary/90 active:scale-[0.98] sm:w-auto md:hover:scale-105"
               >
                 Falar no WhatsApp
                 <ArrowRight className="w-5 h-5" />
@@ -80,7 +80,7 @@ export default function Hero() {
                 href="https://www.instagram.com/seuphonesp/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex w-full max-w-full items-center justify-center gap-2 bg-white text-foreground px-8 py-4 rounded-full font-semibold text-lg border-2 border-border hover:border-primary hover:text-primary transition-colors sm:w-auto"
+                className="inline-flex min-h-14 w-full max-w-full touch-manipulation items-center justify-center gap-2 rounded-full border-2 border-border bg-white px-6 py-4 text-center text-lg font-semibold text-foreground transition-colors hover:border-primary hover:text-primary active:scale-[0.98] sm:w-auto"
               >
                 <Instagram className="w-5 h-5" />
                 Ver no Instagram

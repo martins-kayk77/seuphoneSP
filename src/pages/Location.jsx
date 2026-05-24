@@ -93,11 +93,10 @@ export default function Location() {
               href="https://www.google.com/maps/dir/?api=1&destination=R.+Solano+Trindade,+128+-+Jardim+Arabutan,+Embu+das+Artes+-+SP"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 w-full bg-primary text-white py-4 rounded-full font-semibold hover:bg-primary/90 transition-colors"
+              className="flex min-h-14 w-full max-w-full touch-manipulation items-center justify-center gap-2 rounded-full bg-primary px-5 py-4 text-center font-semibold leading-tight text-white transition-all hover:bg-primary/90 active:scale-[0.98]"
             >
-              <Navigation className="w-5 h-5" />
-              Como Chegar?
-              Abrir no Google Maps
+              <Navigation className="h-5 w-5 shrink-0" />
+              <span>Abrir no Google Maps</span>
             </a>
           </div>
         </div>

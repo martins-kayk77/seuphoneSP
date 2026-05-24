@@ -118,7 +118,7 @@ export default function Products() {
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={(event) => event.stopPropagation()}
-                        className="flex items-center justify-center gap-2 w-full bg-white text-foreground px-6 py-3 rounded-full font-semibold hover:bg-primary hover:text-white transition-colors"
+                        className="flex min-h-12 w-full touch-manipulation items-center justify-center gap-2 rounded-full bg-white px-5 py-3 text-center font-semibold text-foreground shadow-sm transition-all hover:bg-primary hover:text-white active:scale-[0.98]"
                       >
                     <MessageCircle className="w-5 h-5" />
                     Consultar Disponibilidade

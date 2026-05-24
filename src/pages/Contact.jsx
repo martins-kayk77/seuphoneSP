@@ -43,7 +43,7 @@ export default function Contact() {
                 href="https://wa.me/5511977578125"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-4 p-4 bg-green-50 rounded-2xl border border-green-200 hover:bg-green-100 transition-colors group"
+                className="flex w-full max-w-full touch-manipulation items-center gap-4 rounded-2xl border border-green-200 bg-green-50 p-4 transition-colors hover:bg-green-100 group"
               >
                 <div className="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center">
                   <img
@@ -127,7 +127,7 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="w-full flex items-center justify-center gap-2 bg-primary text-white py-4 rounded-full font-semibold hover:bg-primary/90 transition-all hover:scale-[1.02]"
+                className="flex min-h-14 w-full max-w-full touch-manipulation items-center justify-center gap-2 rounded-full bg-primary px-5 py-4 text-center font-semibold text-white transition-all hover:bg-primary/90 active:scale-[0.98] md:hover:scale-[1.02]"
               >
                 <Send className="w-5 h-5" />
                 Enviar via WhatsApp
